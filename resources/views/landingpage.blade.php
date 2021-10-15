@@ -54,7 +54,7 @@
             <div class="card">
                 <img src="{{asset('assets/images/Register.png')}}" style="width:100%">
                 <div class="isian">
-                  <p>Register data diri anda yang terdaftar di perusahaan.</p>
+                  <p>Register data diri anda yang terdaftar di perusahaan anda.</p>
                 </div>
               </div>
               <div class="card">
