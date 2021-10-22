@@ -240,3 +240,192 @@ a:visited {
     margin-left: 30px;
     font-family: Monda;
 }
+
+.profileform-container {
+    display: flex;
+}
+
+.profileform {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1000px;
+    height: 450px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 350px 450px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.profileform > .profilegrid {
+    margin-top: 50px;
+}
+
+.profile-input {
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.profile-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.updatebutton {
+    background-color: rgb(46, 156, 160);
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 288px;
+    margin-top: 20px;
+    font-family: Monda;
+}
+
+.updateform-container {
+    display: flex;
+}
+
+.updateform {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1000px;
+    height: 550px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 350px 450px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.updateform > .updategrid {
+    margin-top: 50px;
+}
+
+.update-input {
+    display: grid;
+    grid-template-columns: 150px 250px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.update-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.update-input > input[type="file"] {
+    margin-top: 20px;
+}
+
+.updatebutton2 {
+    background-color: rgb(46, 156, 160);
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 307px;
+    margin-top: 20px;
+    font-family: Monda;
+}
+
+.producttable-container {
+    display: flex;
+}
+
+.producttable {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1200px;
+    height: 900px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    font-family: Monda;
+}
+
+.producttable > .producttable-grid {
+    margin-top: 50px;
+}
+
+table#showtable {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+}
+
+table#showtable tr,
+td {
+    width: 10%;
+    border: none;
+    padding: 10px;
+}
+
+table#showtable .editbutton {
+    background-color: rgb(35, 192, 35);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 20px;
+    text-align: center;
+}
+
+table#showtable .deletebutton {
+    background-color: rgb(216, 48, 48);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 20px;
+    text-align: center;
+}
+
+.staff-nextbutton {
+    background-color: rgb(46, 156, 160);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 32px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    margin-right: 48px;
+    margin-top: 30px;
+}
+
+.bos-nextbutton {
+    background-color: rgb(46, 156, 160);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 32px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 30px;
+}

@@ -1,23 +1,36 @@
-@extends('templates.master')
-
-@section('header')
-    @include('templates.header0')
-@endsection
-
-@section('isi_page')
-    
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            PaTungin
+        </title>
+        <link rel="stylesheet" href="{{ asset('assets/css/patungin.css')}}">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="navbar-brand" href="#">
+                <div class="logo-image">
+                      <img src="{{asset('assets/images/Logo-small.png')}}" class="img-fluid">
+                </div>
+            </a>
+            <div class="topnav-right">
+                <a href="#landingpage">Beranda</a>
+                <a href="#landingpage">Tentang</a>
+                <a href="#landingpage">Cara kerja</a>
+                <a class="login-button" href="login">Login</a>
+            </div>
+        </div>
         <div class="bg-container">
-            <img src="{{asset('assets/images/Header.png')}}" alt="" style="width:100%;">
-            
+            <img src="{{asset('assets/images/Header.png')}}" style="width:100%;">
             <div class="landingpage-logo">
-            <img src="{{asset('assets/images/Logo.png')}}" alt="" style="width:100%;">
+                <img src="{{asset('assets/images/Logo.png')}}" style="width:100%">
             </div>
             <div class="landingpage-jargon">
                 <p>Mengatur finance perusahaan anda!</p>
             </div>
             <div class="landingpage-daftar">
-                <a class="register-button" href="#register" style="text-decoration: none;">Daftar</a>
+                <a class="register-button" href="register" style="text-decoration: none;">Daftar</a>
             </div>
         </div>
         <div class="centertext">
@@ -54,7 +67,7 @@
             <div class="card">
                 <img src="{{asset('assets/images/Register.png')}}" style="width:100%">
                 <div class="isian">
-                  <p>Register data diri anda yang terdaftar di perusahaan anda.</p>
+                  <p>Register data diri anda yang terdaftar di perusahaan.</p>
                 </div>
               </div>
               <div class="card">
@@ -76,5 +89,31 @@
                 </div>
               </div>
         </div>
-        
-
+        <div class="footer">
+            <div class="footer-container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo-image">
+                          <img src="{{asset('assets/images/Logo-footer.png')}}" class="footer-fluid">
+                    </div>
+                </a>
+                <div class="card">
+                    <div class="isian">
+                        <h3 class="footer-h3">Menu</h3>
+                        <p><a href="#landingpage">Beranda</a></p>
+                        <p><a href="#landingpage">Tentang</a></p>
+                        <p><a href="#landingpage">Cara kerja</a></p>
+                        <p><a href="#landingpage">Login</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="isian">
+                        <h3 class="footer-h3">Contact Us</h3>
+                        <p><a href="#mail"><img src="{{asset('assets/images/mail.png')}}" style="width: 20px">patungin@gmail.com</a></p>
+                        <p><a href="#facebook"><img src="{{asset('assets/images/fb.png')}}" style="width: 20px">PaTungin Aja</a></p>
+                        <p><a href="#instagram"><img src="{{asset('assets/images/instagram.png')}}" style="width: 20px">PaTungin</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
