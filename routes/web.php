@@ -32,3 +32,11 @@ Route::get('/profil', function () {
 Route::get('/profilupdate', function () {
     return view('profilupdate');
 });
+
+Route::get('/produkbos', function () {
+    return view('produkbos');
+});
+
+Route::get('/produkstaff', function () {
+    return view('produkstaff');
+});
