@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            PaTungin
+            PaTungin - Produk Bos
         </title>
         <link rel="stylesheet" href="{{ asset('assets/css/patungin.css')}}">
     </head>
@@ -14,10 +14,11 @@
                 </div>
             </a>
             <div class="topnav-right">
-                <a href="#landingpage">Beranda</a>
-                <a href="#landingpage">Tentang</a>
-                <a href="#landingpage">Cara kerja</a>
-                <a class="login-button" href="#login">Login</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#transaksi">Transaksi</a>
+                <a class="active" href="#produk">Produk</a>
+                <a href="#profile">Profile</a>
+                <a class="login-button" href="#login">Logout</a>
             </div>
         </div>
         <div class="producttable-container">

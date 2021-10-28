@@ -40,3 +40,19 @@ Route::get('/produkbos', function () {
 Route::get('/produkstaff', function () {
     return view('produkstaff');
 });
+
+Route::get('/inputproduk', function () {
+    return view('inputproduk');
+});
+
+Route::get('/editproduk', function () {
+    return view('editproduk');
+});
+
+Route::get('/dashboardbos', function () {
+    return view('dashboardbos');
+});
+
+Route::get('/dashboardstaff', function () {
+    return view('dashboardstaff');
+});

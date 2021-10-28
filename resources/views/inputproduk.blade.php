@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            PaTungin - Profil
+            PaTungin - Tambah Produk
         </title>
         <link rel="stylesheet" href="{{ asset('assets/css/patungin.css')}}">
     </head>
@@ -17,29 +17,34 @@
                 <a href="#dashboard">Dashboard</a>
                 <a href="#transaksi">Transaksi</a>
                 <a href="#produk">Produk</a>
-                <a class="active" href="#profile">Profile</a>
+                <a href="#profile">Profile</a>
                 <a class="login-button" href="#login">Logout</a>
             </div>
         </div>
-        <div class="profileform-container">
-            <div class="profileform">
-                <div class="profilegrid">
-                    <!--nanti tolong dihubungin ke foto yang diinput-->
-                    <img src="{{asset('assets/images/templatephoto.jpg')}}" style="width:100%">
-                </div>
-                <div class="profilegrid">
-                    <h2>Profile</h2>
-                    <div class="profile-input">
-                        <p>Nama</p>
-                        <input type="text" id="nama" name="nama">
-                        <p>Jabatan</p>
-                        <input type="text" id="jabatan" name="jabatan">
-                        <p>Email</p>
-                        <input type="text" id="email" name="email">
-                        <p>Password</p>
-                        <input type="text" id="password" name="password">
+        <div class="header-container">
+            <div class="produk-header">
+                <h2>Input produk di sini!</h2>
+                <p style="margin-top: -20px;">Masukkan data produk terbaru</p>
+            </div>
+        </div>
+        <div class="produkform-container">
+            <div class="produkform">
+                <div class="produkgrid">
+                    <h2>Input Produk</h2>
+                    <div class="produk-input">
+                        <p>ID Produk</p>
+                        <input type="text" id="idproduk" name="idproduk">
+                        <p>Nama Produk</p>
+                        <input type="text" id="namaproduk" name="namaproduk">
+                        <p>Harga Produk</p>
+                        <input type="text" id="hargaproduk" name="hargaproduk">
+                        <p>Stok</p>
+                        <input type="text" id="stok" name="stok">
                     </div>
-                    <button type="submit" class="updatebutton" href="profilupdate">Update</button>
+                    <button style="float: right; margin-top : 20px" type="submit" class="produkbutton">Tambah</button>
+                </div>
+                <div class="produkgrid">
+                    <img src="{{asset('assets/images/produk.png')}}" style="width:100%">
                 </div>
             </div>
         </div>
