@@ -21,6 +21,11 @@
             </div>
         </div>
         <div class="producttable-container">
+            <div class="tambahprod-container">
+                <button class="tambahproduk">Tambah Produk</button>
+            </div>
+        </div>
+        <div class="producttable-container">
             <div class="producttable">
                 <div class="producttable-grid">
                     <!--Ini harus di echo isinya pake javascript, sekarang cuma template-->
