@@ -56,3 +56,19 @@ Route::get('/dashboardbos', function () {
 Route::get('/dashboardstaff', function () {
     return view('dashboardstaff');
 });
+
+Route::get('/transaksibos', function () {
+    return view('transaksibos');
+});
+
+Route::get('/transaksistaff', function () {
+    return view('transaksistaff');
+});
+
+Route::get('/inputtransaksi', function () {
+    return view('inputtransaksi');
+});
+
+Route::get('/edittransaksi', function () {
+    return view('edittransaksi');
+});
