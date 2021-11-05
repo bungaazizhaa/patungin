@@ -65,10 +65,10 @@
 }
 
 .landingpage-logo {
-    width: 400px;
+    width: 30%;
     height: auto;
     margin-top: -600px;
-    margin-left: 100px;
+    left: 8%;
     position: absolute;
 }
 
