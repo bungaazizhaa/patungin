@@ -24,7 +24,7 @@
         </div>
         <div class="producttable-container">
             <div class="tambahprod-container">
-                <button class="tambahproduk">Tambah Produk</button>
+                <button class="tambahproduk " >Tambah Produk</button>
             </div>
         </div>
         <div class="producttable-container">
