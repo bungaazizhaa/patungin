@@ -15,10 +15,10 @@
                 </div>
             </a>
             <div class="topnav-right">
-                <a href="#dashboard">Dashboard</a>
+                <a href="dashboardbos">Dashboard</a>
                 <a class="active" href="#transaksi">Transaksi</a>
-                <a href="#produk">Produk</a>
-                <a href="#profile">Profile</a>
+                <a href="produkbos">Produk</a>
+                <a href="profil">Profile</a>
                 <a class="login-button" href="#login">Logout</a>
             </div>
         </div>

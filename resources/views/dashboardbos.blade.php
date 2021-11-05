@@ -11,14 +11,14 @@
         <div class="topnav">
             <a class="navbar-brand" href="#">
                 <div class="logo-image">
-                      <img src="{{asset('assets/images/Logo-small.png')}}" class="img-fluid">
+                      <img src="{{asset('assets/images/Logo-small.png')}}" class="img-fluid" href="landingpage">
                 </div>
             </a>
             <div class="topnav-right">
                 <a class="active" href="#dashboard">Dashboard</a>
-                <a href="#transaksi">Transaksi</a>
-                <a href="#produk">Produk</a>
-                <a href="#profile">Profile</a>
+                <a href="transaksibos">Transaksi</a>
+                <a href="produkbos">Produk</a>
+                <a href="profil">Profile</a>
                 <a class="login-button" href="#login">Logout</a>
             </div>
         </div>

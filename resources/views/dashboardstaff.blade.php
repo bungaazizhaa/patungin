@@ -16,9 +16,9 @@
             </a>
             <div class="topnav-right">
                 <a class="active" href="#dashboard">Dashboard</a>
-                <a href="#transaksi">Transaksi</a>
-                <a href="#produk">Produk</a>
-                <a href="#profile">Profile</a>
+                <a href="transaksistaff">Transaksi</a>
+                <a href="produkstaff">Produk</a>
+                <a href="profil">Profile</a>
                 <a class="login-button" href="#login">Logout</a>
             </div>
         </div>
