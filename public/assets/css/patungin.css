@@ -16,7 +16,7 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav a{
     float: left;
     color: #333;
     text-align: center;
@@ -28,9 +28,15 @@
     margin-bottom: 7px;
 }
 
-.topnav a.active {
+.topnav a:link, .topnav a:visited {
+    color: #333;
+}
+
+.topnav a:active{
     color: #00C4C2;
 }
+
+
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
