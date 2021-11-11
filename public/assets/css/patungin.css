@@ -259,6 +259,67 @@ a:visited {
     font-family: Monda;
 }
 
+.regisform-container {
+    display: flex;
+}
+
+.regisform {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    width: 1000px;
+    height: 450px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-evenly;
+    font-family: Monda;
+}
+
+.regisform > .regisgrid {
+    margin-top: 50px;
+}
+
+.regis-input {
+    display: grid;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+
+.regis-input > input[type="text"] {
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.regisform > p > a {
+    color: #00C4C2;
+    text-decoration: none;
+}
+
+.regisgrid > p {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.regisbutton {
+    background-color: #00C4C2;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: Monda;
+}
+
 .profileform-container {
     display: flex;
 }
