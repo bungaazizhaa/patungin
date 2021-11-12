@@ -36,9 +36,9 @@
                         <p>Jabatan</p>
                         <input type="text" id="jabatan" name="jabatan">
                         <p>Email</p>
-                        <input type="text" id="email" name="email">
+                        <input type="email" id="email" name="email">
                         <p>Password</p>
-                        <input type="text" id="password" name="password">
+                        <input type="password" id="password" name="password">
                     </div>
                     <button type="submit" class="updatebutton" href="profilupdate">Update</button>
                 </div>

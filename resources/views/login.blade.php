@@ -30,9 +30,9 @@
                     <h2>Login</h2>
                     <div class="login-input">
                         <p>Email</p>
-                        <input type="text" id="email" name="email">
+                        <input type="email" id="email" name="email">
                         <p>Password</p>
-                        <input type="text" id="password" name="password">
+                        <input type="password" id="password" name="password">
                     </div>
                     <p>Belum punya akun? <a href="register" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit" class="loginbutton">Login</button></p>
                 </div>
