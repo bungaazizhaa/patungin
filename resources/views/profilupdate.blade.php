@@ -36,11 +36,11 @@
                         <p>Jabatan</p>
                         <input type="text" id="jabatan" name="jabatan">
                         <p>Email</p>
-                        <input type="text" id="email" name="email">
+                        <input type="email" id="email" name="email">
                         <p>Password lama</p>
-                        <input type="text" id="passwordlama" name="passwordlama">
+                        <input type="password" id="passwordlama" name="passwordlama">
                         <p>Password baru</p>
-                        <input type="text" id="passwordbaru" name="passwordbaru">
+                        <input type="password" id="passwordbaru" name="passwordbaru">
                         <p>Foto Profil</p>
                         <input type="file" id="browse" name="browse">
                     </div>

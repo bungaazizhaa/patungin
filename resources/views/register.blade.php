@@ -22,6 +22,7 @@
             <a href="#landingpage">Cara kerja</a>
             <a class="login-button" href="#login">Login</a>
         </div>
+<<<<<<< HEAD
     </div>
     <div class="regisform-container">
         <div class="regisform">
@@ -41,6 +42,28 @@
                     <input type="text" id="password" name="password">
                     <p>Foto Profil</p>
                     <input type="file" id="browse" name="browse">
+=======
+        <div class="regisform-container">
+            <div class="regisform">
+                <div class="regisgrid">
+                    <img src="{{asset('assets/images/Register-img.png')}}" style="width:100%">
+                </div>
+                <div class="regisgrid">
+                    <h2>Register</h2>
+                    <div class="regis-input">
+                        <p>Nama</p>
+                        <input type="text" id="nama" name="nama">
+                        <p>Jabatan</p>
+                        <input type="text" id="jabatan" name="jabatan">
+                        <p>Email</p>
+                        <input type="email" id="email" name="email">
+                        <p>Password</p>
+                        <input type="password" id="password" name="password">
+                        <p>Foto Profil</p>
+                        <input type="file" id="browse" name="browse">
+                    </div>
+                    <p>Sudah punya akun? <a href="login" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton">Register</button></p>
+>>>>>>> 1d216f07ff55fa91cf4f11db7ac75795d2aa0b3d
                 </div>
                 <p>Sudah punya akun? <a href="login" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton">Register</button></p>
             </div>
