@@ -29,23 +29,25 @@
             <div class="regisgrid">
                 <img src="{{asset('assets/images/Register-img.png')}}" style="width:100%">
             </div>
-            <div class="regisgrid">
-                <h2>Register</h2>
-                <div class="regis-input">
-                    <p>Nama</p>
-                    <input type="text" id="nama" name="nama">
-                    <p>Jabatan</p>
-                    <input type="text" id="jabatan" name="jabatan">
-                    <p>Email</p>
-                    <input type="email" id="email" name="email">
-                    <p>Password</p>
-                    <input type="text" id="password" name="password">
-                    <p>Foto Profil</p>
-                    <input type="file" id="browse" name="browse">
+            <form action="#keroutenyaregister" method="POST">
+                <div class="regisgrid">
+                    <h2>Register</h2>
+                    <div class="regis-input">
+                        <p>Nama</p>
+                        <input type="text" id="nama" name="nama">
+                        <p>Jabatan</p>
+                        <input type="text" id="jabatan" name="jabatan">
+                        <p>Email</p>
+                        <input type="email" id="email" name="email">
+                        <p>Password</p>
+                        <input type="text" id="password" name="password">
+                        <p>Foto Profil</p>
+                        <input type="file" id="browse" name="browse">
 
+                    </div>
+                    <p>Sudah punya akun? <a href="login" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton">Register</button></p>
                 </div>
-                <p>Sudah punya akun? <a href="login" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton">Register</button></p>
-            </div>
+            </form>
         </div>
     </div>
     <div class="footer">

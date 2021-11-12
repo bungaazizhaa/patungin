@@ -29,17 +29,18 @@
             <div class="logingrid">
                 <img src="{{asset('assets/images/Login-img.png')}}" style="width:100%">
             </div>
-            <div class="logingrid">
-                <h2>Login</h2>
-                <div class="login-input">
-                    <p>Email</p>
-                    <input type="email" id="email" name="email">
-                    <p>Password</p>
-                    <input type="text" id="password" name="password">
-
+            <form action="#keroutenyalogin" method="POST">
+                <div class="logingrid">
+                    <h2>Login</h2>
+                    <div class="login-input">
+                        <p>Email</p>
+                        <input type="email" id="email" name="email">
+                        <p>Password</p>
+                        <input type="text" id="password" name="password">
+                    </div>
+                    <p>Belum punya akun? <a href="/register" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit" class="loginbutton">Login</button></p>
                 </div>
-                <p>Belum punya akun? <a href="/register" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit" class="loginbutton">Login</button></p>
-            </div>
+            </form>
         </div>
     </div>
     <div class="footer">
