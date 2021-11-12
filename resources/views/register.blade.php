@@ -41,7 +41,7 @@
                         <p>Email</p>
                         <input type="email" id="email" name="email">
                         <p>Password</p>
-                        <input type="text" id="password" name="password">
+                        <input type="password" id="password" name="password">
                         <p>Foto Profil</p>
                         <input type="file" id="browse" name="browse">
 
