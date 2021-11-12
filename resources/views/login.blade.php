@@ -22,7 +22,7 @@
             <a href="#landingpage">Cara kerja</a>
             <a class="login-button" href="#login">Login</a>
         </div>
-<<<<<<< HEAD
+
     </div>
     <div class="loginform-container">
         <div class="loginform">
@@ -36,22 +36,7 @@
                     <input type="email" id="email" name="email">
                     <p>Password</p>
                     <input type="text" id="password" name="password">
-=======
-        <div class="loginform-container">
-            <div class="loginform">
-                <div class="logingrid">
-                    <img src="{{asset('assets/images/Login-img.png')}}" style="width:100%">
-                </div>
-                <div class="logingrid">
-                    <h2>Login</h2>
-                    <div class="login-input">
-                        <p>Email</p>
-                        <input type="email" id="email" name="email">
-                        <p>Password</p>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <p>Belum punya akun? <a href="register" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit" class="loginbutton">Login</button></p>
->>>>>>> 1d216f07ff55fa91cf4f11db7ac75795d2aa0b3d
+
                 </div>
                 <p>Belum punya akun? <a href="/register" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit" class="loginbutton">Login</button></p>
             </div>
