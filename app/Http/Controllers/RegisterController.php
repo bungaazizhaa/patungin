@@ -24,8 +24,8 @@ class RegisterController extends Controller
             'name' => 'required|string',
             'email' => 'required|email|unique:users',
             'password' => 'required|string',
-            'jabatan' => 'required|string'
-            // 'browse' => 'string'
+            'jabatan' => 'required|string',
+            'browse' => 'string'
         ]);
 
         // dd('registrasi berhasil');
@@ -34,7 +34,8 @@ class RegisterController extends Controller
             'name' => $fields['name'],
             'email' => $fields['email'],
             'password' => bcrypt($fields['password']),
-            'jabatan' => $fields['jabatan']
+            'jabatan' => $fields['jabatan'],
+            'browse' => $fields['browse']
         ]);
 
         $token = $user->createToken('myapptoken')->plainTextToken;

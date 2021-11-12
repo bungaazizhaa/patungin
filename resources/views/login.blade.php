@@ -30,6 +30,7 @@
                 <img src="{{asset('assets/images/Login-img.png')}}" style="width:100%">
             </div>
             <form action="#keroutenyalogin" method="POST">
+                @csrf
                 <div class="logingrid">
                     <h2>Login</h2>
                     <div class="login-input">
