@@ -25,10 +25,9 @@ class RegisterController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|string',
             'jabatan' => 'required|string',
-            'browse' => 'string'
+            'browse' => 'required|string'
         ]);
 
-        // dd('registrasi berhasil');
 
         $user = User::create([
             'name' => $fields['name'],
@@ -45,6 +44,7 @@ class RegisterController extends Controller
             'token' => $token
         ];
 
-        return response($response, 201);
+
+        return view('login');
     }
 }

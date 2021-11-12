@@ -20,7 +20,7 @@
             <a href="#landingpage">Beranda</a>
             <a href="#landingpage">Tentang</a>
             <a href="#landingpage">Cara kerja</a>
-            <a class="login-button" href="#login">Login</a>
+            <a class="login-button" href="/login">Login</a>
         </div>
 
     </div>
@@ -46,7 +46,7 @@
                         <input type="file" id="browse" name="browse">
 
                     </div>
-                    <p>Sudah punya akun? <a href="login" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton">Register</button></p>
+                    <p>Sudah punya akun? <a href="/login" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton">Register</button></p>
                 </div>
             </form>
         </div>

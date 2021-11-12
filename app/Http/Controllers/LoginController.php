@@ -33,11 +33,19 @@ class LoginController extends Controller
 
         $token = $user->createToken('myapptoken')->plainTextToken;
 
-        $response = [
-            'user' => $user,
-            'token' => $token
-        ];
+        // $user = User::where('email', $fields['email'])->first();
+        $jabatan = User::where('jabatan' == 'bos');
+        if (auth()->jabatan()->jabatan !== 'bos') {
+            return view('dashboardstaff');
+        }
 
-        return response($response, 201);
+        return view('dashboardbos');
+
+        // $response = [
+        //     'user' => $user,
+        //     'token' => $token
+        // ];
+
+        // return response($response, 201);
     }
 }

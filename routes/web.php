@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BosController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
@@ -26,6 +27,12 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'register']);
 
 // Private Route
+Route::get('/dashboardbos', [BosController::class, 'index']);
+
+Route::get('/dashboardstaff', function () {
+    return view('dashboardstaff');
+});
+
 Route::get('/profil', function () {
     return view('profil');
 });
@@ -50,13 +57,6 @@ Route::get('/editproduk', function () {
     return view('editproduk');
 });
 
-Route::get('/dashboardbos', function () {
-    return view('dashboardbos');
-});
-
-Route::get('/dashboardstaff', function () {
-    return view('dashboardstaff');
-});
 
 Route::get('/transaksibos', function () {
     return view('transaksibos');
