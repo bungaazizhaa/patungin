@@ -30,11 +30,12 @@
                 <img src="{{asset('assets/images/Register-img.png')}}" style="width:100%">
             </div>
             <form action="#keroutenyaregister" method="POST">
+                @csrf
                 <div class="regisgrid">
                     <h2>Register</h2>
                     <div class="regis-input">
                         <p>Nama</p>
-                        <input type="text" id="nama" name="nama">
+                        <input type="text" id="name" name="name">
                         <p>Jabatan</p>
                         <input type="text" id="jabatan" name="jabatan">
                         <p>Email</p>
