@@ -33,18 +33,20 @@
     <div class="produkform-container">
         <div class="produkform">
             <div class="produkgrid">
-                <h2>Input Produk</h2>
-                <div class="produk-input">
-                    <p>ID Produk</p>
-                    <input type="text" id="idproduk" name="idProduk">
-                    <p>Nama Produk</p>
-                    <input type="text" id="namaproduk" name="namaProduk">
-                    <p>Harga Produk</p>
-                    <input type="text" id="hargaproduk" name="hargaProduk">
-                    <p>Stok</p>
-                    <input type="text" id="stok" name="stok">
-                </div>
-                <button style="float: right; margin-top : 20px" type="submit" class="produkbutton">Tambah</button>
+                <form action="#routeproduk" method="POST">
+                    <h2>Input Produk</h2>
+                    <div class="produk-input">
+                        <p>ID Produk</p>
+                        <input type="text" id="idproduk" name="idProduk">
+                        <p>Nama Produk</p>
+                        <input type="text" id="namaproduk" name="namaProduk">
+                        <p>Harga Produk</p>
+                        <input type="text" id="hargaproduk" name="hargaProduk">
+                        <p>Stok</p>
+                        <input type="text" id="stok" name="stok">
+                    </div>
+                    <button style="float: right; margin-top : 20px" type="submit" class="produkbutton">Tambah</button>
+                </form>
             </div>
             <div class="produkgrid">
                 <img src="{{asset('assets/images/produk.png')}}" style="width:100%">

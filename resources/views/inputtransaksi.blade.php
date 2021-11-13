@@ -31,26 +31,28 @@
         <div class="produkform-container">
             <div class="transaksiform">
                 <div class="transaksigrid">
-                    <h2>Input Transaksi</h2>
-                    <div class="transaksi-input">
-                        <p>ID Transaksi</p>
-                        <input type="text" id="idtransaksi" name="idtransaksi">
-                        <p>ID Produk</p>
-                        <input type="text" id="idproduk" name="idproduk">
-                        <p>Banyak Terjual</p>
-                        <input type="text" id="banyakterjual" name="banyak terjual">
-                        <p>Pendapatan Harian</p>
-                        <input type="text" id="pendapatan" name="pendapatan">
-                        <p>Pengeluaran Harian</p>
-                        <input type="text" id="pengeluaran" name="pengeluaran">
-                        <p>Keuntungan</p>
-                        <input type="text" id="keuntungan" name="keuntungan">
-                    </div>
-                    <button style="float: right; margin-top : 20px" type="submit" class="produkbutton">Tambah</button>
+                    <form action="#routetransaksi" method="POST">
+                        <h2>Input Transaksi</h2>
+                        <div class="transaksi-input">
+                            <p>ID Transaksi</p>
+                            <input type="text" id="idtransaksi" name="idtransaksi">
+                            <p>ID Produk</p>
+                            <input type="text" id="idproduk" name="idproduk">
+                            <p>Banyak Terjual</p>
+                            <input type="text" id="banyakterjual" name="banyak terjual">
+                            <p>Pendapatan Harian</p>
+                            <input type="text" id="pendapatan" name="pendapatan">
+                            <p>Pengeluaran Harian</p>
+                            <input type="text" id="pengeluaran" name="pengeluaran">
+                            <p>Keuntungan</p>
+                            <input type="text" id="keuntungan" name="keuntungan">
+                        </div>
+                        <button style="float: right; margin-top : 20px" type="submit" class="produkbutton">Tambah</button>
+                    </form>
                 </div>
                 <div class="transaksigrid">
                     <img src="{{asset('assets/images/transaksi.png')}}" style="width:100%">
-                </div>
+                </div>            
             </div>
         </div>
         <div class="footer">

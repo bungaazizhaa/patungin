@@ -29,9 +29,9 @@
             <div class="regisgrid">
                 <img src="{{asset('assets/images/Register-img.png')}}" style="width:100%">
             </div>
-            <form action="#keroutenyaregister" method="POST">
+            <div class="regisgrid">
+                <form action="#keroutenyaregister" method="POST">
                 @csrf
-                <div class="regisgrid">
                     <h2>Register</h2>
                     <div class="regis-input">
                         <p>Nama</p>
@@ -44,11 +44,10 @@
                         <input type="password" id="password" name="password">
                         <p>Foto Profil</p>
                         <input type="file" id="browse" name="browse">
-
                     </div>
-                    <p>Sudah punya akun? <a href="/login" style="color:rgb(46, 156, 160)">Login sekarang!</a><button type="submit" class="regisbutton">Register</button></p>
-                </div>
-            </form>
+                    <p style="font-size: 12px; margin-top: 30px;">Sudah punya akun? <a href="/login" style="color:rgb(46, 156, 160)">Login sekarang!<input type="submit" class="regisbutton" value="Register" style="float: right;"></p>
+                </form>
+            </div>
         </div>
     </div>
     <div class="footer">

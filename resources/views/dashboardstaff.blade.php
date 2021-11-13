@@ -24,7 +24,7 @@
         </div>
         <div class="header-container">
             <div class="produk-header">
-                <h2>Selamat datang Budi!</h2>
+                <h2 style="margin-top: 20px;">Selamat datang Budi!</h2>
                 <p style="margin-top: -20px;">Berikut data pembukuan dan keuangan perusahaan.</p>
             </div>
         </div>
