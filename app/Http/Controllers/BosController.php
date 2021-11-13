@@ -6,4 +6,8 @@ use Illuminate\Http\Request;
 
 class BosController extends Controller
 {
+    public function index()
+    {
+        return view('dashboardbos');
+    }
 }

@@ -39,7 +39,7 @@
                         <p>Password</p>
                         <input type="password" id="password" name="password">
                     </div>
-                    <p>Belum punya akun? <a href="/register" style="color:rgb(46, 156, 160)">Register sekarang!</a><a class="loginbutton" href="#">Login</a></p>
+                    <p>Belum punya akun? <a href="/register" style="color:rgb(46, 156, 160)">Register sekarang!</a><button type="submit"><a class="loginbutton" href="/login">Login</a></button></p>
                 </div>
             </form>
         </div>

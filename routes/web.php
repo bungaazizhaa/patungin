@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BosController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TransaksiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +29,17 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'register']);
 
 // Private Route
+Route::get('/inputproduk', [ProdukController::class, 'index']);
+Route::post('/inputproduk', [ProdukController::class, 'store']);
+Route::put('/editproduk/{idProduk}', [ProdukController::class, 'update']);
+Route::delete('/deleteproduk/{idProduk}', [ProdukController::class, 'destroy']);
+Route::get('/inputtransaksi', function () {
+    return view('inputtransaksi');
+});
+Route::post('/inputtransaksi', [TransaksiController::class, 'store']);
+Route::put('/edittransaksi/{idTransaksi}', [TransaksiController::class, 'update']);
+Route::delete('/deletetransaksi/{idTransaksi}', [TransaksiController::class, 'destroy']);
+
 Route::get('/dashboardbos', [BosController::class, 'index']);
 
 Route::get('/dashboardstaff', function () {
@@ -49,27 +62,10 @@ Route::get('/produkstaff', function () {
     return view('produkstaff');
 });
 
-Route::get('/inputproduk', function () {
-    return view('inputproduk');
-});
-
-Route::get('/editproduk', function () {
-    return view('editproduk');
-});
-
-
 Route::get('/transaksibos', function () {
     return view('transaksibos');
 });
 
 Route::get('/transaksistaff', function () {
     return view('transaksistaff');
-});
-
-Route::get('/inputtransaksi', function () {
-    return view('inputtransaksi');
-});
-
-Route::get('/edittransaksi', function () {
-    return view('edittransaksi');
 });
