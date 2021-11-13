@@ -44,4 +44,14 @@ class LoginController extends Controller
         return view('dashboardbos');
         // return response($response, 201);
     }
+
+    //Log out
+    public function logout(Request $request)
+    {
+        auth()->user()->tokens()->delete();
+
+        return [
+            'massage' => 'Logged out'
+        ];
+    }
 }

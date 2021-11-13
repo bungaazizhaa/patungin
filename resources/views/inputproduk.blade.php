@@ -33,7 +33,8 @@
     <div class="produkform-container">
         <div class="produkform">
             <div class="produkgrid">
-                <form action="#routeproduk" method="POST">
+                <form action="/inputproduk" method="POST">
+                    @csrf
                     <h2>Input Produk</h2>
                     <div class="produk-input">
                         <p>ID Produk</p>

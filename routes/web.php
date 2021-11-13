@@ -39,6 +39,7 @@ Route::get('/inputtransaksi', function () {
 Route::post('/inputtransaksi', [TransaksiController::class, 'store']);
 Route::put('/edittransaksi/{idTransaksi}', [TransaksiController::class, 'update']);
 Route::delete('/deletetransaksi/{idTransaksi}', [TransaksiController::class, 'destroy']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/dashboardbos', [BosController::class, 'index']);
 

@@ -28,16 +28,24 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'idProduk' => 'required',
-            'namaProduk' => 'required',
-            'hargaProduk' => 'required',
-            // 'produkTerjual',
-            'stock' => 'required'
+        $fields = $request->validate([
+            'idProduk' => 'required|string',
+            'namaProduk' => 'required|string|',
+            'hargaProduk' => 'required|string',
+            // 'produkTerjual' => 'required|string',
+            'stok' => 'required|string'
         ]);
 
-        dd('sukes');
-        // return Produk::create($request->all());
+        // dd('sukes');
+        Produk::create([
+            'idProduk' => $fields['idProduk'],
+            'namaProduk' => $fields['namaProduk'],
+            'hargaProduk' => $fields['hargaProduk'],
+            'produkTerjual' => null,
+            'stok' => $fields['stok']
+        ]);
+
+        return view('produkstaff');
     }
 
     /**

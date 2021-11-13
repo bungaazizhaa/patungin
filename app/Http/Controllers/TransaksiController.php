@@ -29,14 +29,16 @@ class TransaksiController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'idTransaksi' => 'required',
-            'idProduk' => 'required',
-            'pendapatanHarian' => 'required',
-            'pengeluaranHarian' => 'required',
-            'keuntungan' => 'required'
+            'idTransaksi' => 'required|string',
+            'idProduk' => 'required|string',
+            'banyakTerjual' => 'required|string',
+            'pendapatan' => 'required|string',
+            'pengeluaran' => 'required|string',
+            'keuntungan' => 'required|string'
         ]);
 
-        return Transaksi::create($request->all());
+        Transaksi::create($request->all());
+        return view('transaksistaff');
     }
 
     /**

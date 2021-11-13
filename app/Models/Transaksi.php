@@ -12,8 +12,9 @@ class Transaksi extends Model
     protected $fillable = [
         'idTransaksi',
         'idProduk',
-        'pendapatanHarian',
-        'pengeluaranHarian',
+        'banyakTerjual',
+        'pendapatan',
+        'pengeluaran',
         'keuntungan'
     ];
 }
