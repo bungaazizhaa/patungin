@@ -44,7 +44,6 @@
 							</tr>
 						@endforeach
 					</table>
-					<button class="bos-nextbutton">Next</button>
 				</div>
 			</div>
 		</div>

@@ -42,143 +42,18 @@
                         <th>Stok</th>
                         <th colspan="2">Action</th>
                     </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>Indomie Goreng</td>
-                        <td>Rp.3000</td>
-                        <td>300</td>
-                        <td>5000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
+                    @foreach($data as $item)
+                        <tr>
+                            <td>{{$item['idProduk']}}</td>
+							<td>{{$item['namaProduk']}}</td>
+							<td>Rp.{{$item['hargaProduk']}}</td>
+							<td>{{$item['produkTerjual']}}</td>
+							<td>{{$item['stok']}}</td>
+                            <td><button class="editbutton">edit</button></td>
+                            <td><button class="deletebutton">delete</button></td>
+                        </tr>
+                    @endforeach
                 </table>
-                <button class="staff-nextbutton">Next</button>
             </div>
         </div>
     </div>

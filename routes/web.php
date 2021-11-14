@@ -7,6 +7,7 @@ use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\ProdukBosController;
+use App\Http\Controllers\ProdukStaffController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,10 +58,7 @@ Route::get('/profilupdate', function () {
 });
 
 Route::get('/produkbos', [ProdukBosController::class, 'index']);
-
-Route::get('/produkstaff', function () {
-    return view('produkstaff');
-});
+Route::get('/produkstaff', [ProdukStaffController::class, 'index']);
 
 Route::get('/transaksibos', function () {
     return view('transaksibos');
