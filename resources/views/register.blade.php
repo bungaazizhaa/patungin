@@ -37,7 +37,10 @@
                         <p>Nama</p>
                         <input type="text" id="name" name="name">
                         <p>Jabatan</p>
-                        <input type="text" id="jabatan" name="jabatan">
+                        <select id="jabatan" name="jabatan">
+                            <option value="Staff">Staff</option>
+                            <option value="Bos">Bos</option>
+                        </select>
                         <p>Email</p>
                         <input type="email" id="email" name="email">
                         <p>Password</p>
