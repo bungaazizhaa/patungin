@@ -44,7 +44,7 @@
                         <p>Foto Profil</p>
                         <input type="file" id="browse" name="browse">
                     </div>
-                    <button type="submit" class="updatebutton2">Update</button>
+                    <input type="submit" class="updatebutton2" value="Update">
                 </div>
             </div>
         </div>

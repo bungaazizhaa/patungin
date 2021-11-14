@@ -40,7 +40,7 @@
                         <p>Password</p>
                         <input type="password" id="password" name="password">
                     </div>
-                    <button type="submit" class="updatebutton" href="profilupdate">Update</button>
+                    <a href="/profilupdate" class="updatebutton" href="profilupdate">Update</a>
                 </div>
             </div>
         </div>
