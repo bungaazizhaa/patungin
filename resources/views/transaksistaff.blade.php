@@ -40,153 +40,20 @@
                         <th>Pendapatan Harian</th>
                         <th>Pengeluaran Harian</th>
                         <th>Keuntungan</th>
+                        <th colspan="2">Action</th>
                     </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>1025</td>
-                        <td>1025</td>
-                        <td>Rp.500.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.400.000</td>
-                        <td><button class="editbutton">edit</button></td>
-                        <td><button class="deletebutton">delete</button></td>
-                    </tr>
+                    @foreach($data as $item)
+                        <tr>
+                            <td>{{$item['idTransaksi']}}</td>
+                            <td>{{$item['idProduk']}}</td>
+                            <td>Rp.{{$item['pendapatan']}}</td>
+                            <td>Rp.{{$item['pengeluaran']}}</td>
+                            <td>Rp.{{$item['keuntungan']}}</td>
+                            <td><button class="editbutton">edit</button></td>
+                            <td><button class="deletebutton">delete</button></td>
+                        </tr>
+                    @endforeach
                 </table>
-                <button class="bos-nextbutton">Next</button>
             </div>
         </div>
     </div>
