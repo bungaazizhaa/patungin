@@ -1,9 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BosController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,60 +13,56 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-// Public Route
 Route::get('/', function () {
     return view('landingpage');
 });
 
-Route::get('/login', [LoginController::class, 'index']);
-Route::post('/login', [LoginController::class, 'login']);
-Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'register']);
+Route::group(['prefix' => 'lp', 'as' => 'lp.'], function () {
+    Route::get('/', 'LandingPageController@index')->name('index');
 
-// Private Route
-Route::get('/dashboardbos', [BosController::class, 'index']);
+    //bos section
+    Route::get('/dashboardbos', 'LandingPageController@dashboardbos')->name('dashboardbos');
+    Route::get('/transaksibos', 'LandingPageController@transaksibos')->name('transaksibos');
+    Route::get('/produkbos', 'LandingPageController@produkbos')->name('produkbos');
 
-Route::get('/dashboardstaff', function () {
-    return view('dashboardstaff');
+    //staff section
+    Route::get('/dashboardstaff', 'LandingPageController@dashboardstaff')->name('dashboardstaff');
+    Route::get('/transaksistaff', 'LandingPageController@transaksistaff')->name('transaksistaff');
+    Route::get('/produkstaff', 'LandingPageController@produkstaff')->name('produkstaff');
+
+    Route::get('/profile/{id}', 'LandingPageController@profile')->name('profile');
+    Route::get('/daftar', 'LandingPageController@daftar')->name('daftar');
 });
 
-Route::get('/profil', function () {
-    return view('profil');
+Route::group(['prefix' => 'home', 'as' => 'home.'], function () {
+    Route::get('/index', 'HomeController@index')->name('index');
+    Route::get('/bosPage', 'HomeController@bosPage')->name('bosPage');
+    Route::get('/show', 'HomeController@show')->name('show');
+    Route::get('/edit/{id}', 'HomeController@edit')->name('edit');
+    Route::get('/login', 'HomeController@login')->name('login');
+    Route::post('/loginPost', 'HomeController@loginPost')->name('loginPost');
+    Route::post('/destroy/{id}', 'HomeController@destroy')->name('destroy');
+    Route::post('/store', 'HomeController@store')->name('store');
+    Route::post('/update', 'HomeController@update')->name('update');
+    Route::get('/logout', 'HomeController@logout')->name('logout');
 });
 
-Route::get('/profilupdate', function () {
-    return view('profilupdate');
-});
+Route::group(['prefix' => 'proses', 'as' => 'proses.'], function () {
+    //transaksi
+    Route::get('/index', 'ProsesController@index')->name('index');
+    Route::get('/addTrans', 'ProsesController@addTrans')->name('addTrans');
+    Route::get('/addProduk', 'ProsesController@addProduk')->name('addProduk');
+    Route::post('/storeTrans', 'ProsesController@storeTrans')->name('storeTrans');
+    Route::get('/edit/{id}', 'ProsesController@edit')->name('edit');
+    Route::get('/destroy/{id}', 'ProsesController@destroy')->name('destroy');
+    Route::post('/update', 'ProsesController@update')->name('update');
 
-Route::get('/produkbos', function () {
-    return view('produkbos');
-});
+    //produk
+    Route::get('/prodList', 'ProsesController@prodList')->name('prodList');
+    Route::get('/addProduk', 'ProsesController@addProduk')->name('addProduk');
+    Route::post('/storeProduk', 'ProsesController@storeProduk')->name('storeProduk');
+    Route::get('/editProd/{id}', 'ProsesController@editProd')->name('editProd');
+    Route::get('/destroyProd/{id}', 'ProsesController@destroyProd')->name('destroyProd');
+    Route::post('/updateProd', 'ProsesController@updateProd')->name('updateProd');
 
-Route::get('/produkstaff', function () {
-    return view('produkstaff');
-});
-
-Route::get('/inputproduk', function () {
-    return view('inputproduk');
-});
-
-Route::get('/editproduk', function () {
-    return view('editproduk');
-});
-
-
-Route::get('/transaksibos', function () {
-    return view('transaksibos');
-});
-
-Route::get('/transaksistaff', function () {
-    return view('transaksistaff');
-});
-
-Route::get('/inputtransaksi', function () {
-    return view('inputtransaksi');
-});
-
-Route::get('/edittransaksi', function () {
-    return view('edittransaksi');
 });

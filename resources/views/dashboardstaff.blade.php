@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             PaTungin - Dashboard
         </title>
@@ -15,16 +14,20 @@
                 </div>
             </a>
             <div class="topnav-right">
-                <a class="active" href="#dashboard">Dashboard</a>
-                <a href="transaksistaff">Transaksi</a>
-                <a href="produkstaff">Produk</a>
-                <a href="profil">Profile</a>
-                <a class="login-button" href="#login">Logout</a>
+                <a class="active" href="{{route('lp.dashboardstaff')}}">Dashboard</a>
+                <a href="{{route('lp.transaksistaff')}}">Transaksi</a>
+                <a href="{{route('lp.produkstaff')}}">Produk</a>
+                <a href="{{url('lp/profile')}}/{{session('id')}}">Profile</a>
+                <a class="login-button" href="{{route('home.logout')}}">Logout</a>
             </div>
         </div>
         <div class="header-container">
             <div class="produk-header">
-                <h2>Selamat datang Budi!</h2>
+                @if(!empty(session('name')))
+                    <h2>Selamat datang {{session('name')}}</h2>
+                @else
+                    <h2>Selamat datang {{session('email')}}</h2>
+                @endif
                 <p style="margin-top: -20px;">Berikut data pembukuan dan keuangan perusahaan.</p>
             </div>
         </div>
@@ -56,71 +59,59 @@
         <div class="dashboard-container">
             <div class="table-grid">
                 <div class="tablecard">
-                    <table id="dashboardtable">
+                    <table id="dashboardtable" class="table">
+                        <thead>
                         <tr>
                             <th>ID Produk</th>
                             <th>Nama Produk</th>
                             <th>Terjual</th>
                         </tr>
+                        </thead>
+                        @if($countTrans > 0)
+                        <tbody>
+                        @foreach($laris as $row)
                         <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>300</td>
+                           <td>{{$row->id_produk}}</td>
+                           <td>{{$row->nama_produk}}</td>
+                           <td>{{$row->bnyk_terjual}}</td>
                         </tr>
+                        @endforeach
+                        @else
                         <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>300</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>300</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>300</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>300</td>
-                        </tr>
+                        </tbody>
+                        @endif
                     </table>
                 </div>
                 <div class="tablecard">
                     <table id="dashboardtable">
+                        <thead>
                         <tr>
                             <th>ID Produk</th>
                             <th>Nama Produk</th>
                             <th>Stok</th>
                         </tr>
+                        </thead>
+                        <tbody>
+                        @if($countStok > 0)
+                        @foreach($stok as $row)
                         <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>0</td>
+                            <td>{{$row->id_produk}}</td>
+                            <td>{{$row->nama_produk}}</td>
+                            <td>{{$row->stok}}</td>
                         </tr>
+                        @endforeach
+                        @else
                         <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>0</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
                         </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>Indomie Mie Goreng</td>
-                            <td>0</td>
-                        </tr>
+                        @endif
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -135,10 +126,10 @@
                 <div class="card">
                     <div class="isian">
                         <h3 class="footer-h3">Menu</h3>
-                        <p><a href="#landingpage">Beranda</a></p>
-                        <p><a href="#landingpage">Tentang</a></p>
-                        <p><a href="#landingpage">Cara kerja</a></p>
-                        <p><a href="#landingpage">Login</a></p>
+                        <p><a href="{{'/'}}">Beranda</a></p>
+                        <p><a href="{{route('lp.index')}}#tentang">Tentang</a></p>
+                        <p><a href="{{route('lp.index')}}#carakerja">Cara kerja</a></p>
+                        <p><a href="{{route('home.login')}}">Login</a></p>
                     </div>
                 </div>
                 <div class="card">

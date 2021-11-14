@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
         <title>
             PaTungin - Transaksi Bos
         </title>
@@ -15,18 +18,19 @@
                 </div>
             </a>
             <div class="topnav-right">
-                <a href="dashboardbos">Dashboard</a>
-                <a class="active" href="#transaksi">Transaksi</a>
-                <a href="produkbos">Produk</a>
-                <a href="profil">Profile</a>
-                <a class="login-button" href="#login">Logout</a>
+                <a href="{{route('lp.dashboardbos')}}">Dashboard</a>
+                <a class="active" href="{{route('lp.transaksibos')}}">Transaksi</a>
+                <a href="{{route('lp.produkbos')}}">Produk</a>
+                <a href="{{url('lp/profile')}}/{{session('id')}}">Profile</a>
+                <a class="login-button" href="{{route('home.logout')}}">Logout</a>
             </div>
         </div>
         <div class="producttable-container">
             <div class="producttable">
                 <div class="producttable-grid">
                     <!--Ini harus di echo isinya pake javascript, sekarang cuma template-->
-                    <table id="showtable">
+                    <table id="showtable" class="table display">
+                        <thead>
                         <tr>
                             <th>ID Transaksi</th>
                             <th>ID Produk</th>
@@ -34,120 +38,20 @@
                             <th>Pengeluaran Harian</th>
                             <th>Keuntungan</th>
                         </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
-                        <tr>
-                            <td>1025</td>
-                            <td>1025</td>
-                            <td>Rp.500.000</td>
-                            <td>Rp.100.000</td>
-                            <td>Rp.400.000</td>
-                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($trans as $row)
+                            <tr>
+                                <td><?= $row->id_transaksi ?></td>
+                                <td><?= $row->id_produk ?></td>
+                                <td><?= 'Rp. '.number_format($row->pendapatan) ?></td>
+                                <td><?= 'Rp. '.number_format($row->pengeluaran) ?></td>
+                                <td><?= 'Rp. '.number_format($row->pendapatan) ?></td>
+                            </tr>
+                        @endforeach
+                        </tbody>
                     </table>
-                    <button class="bos-nextbutton">Next</button>
+                    <!--<button class="bos-nextbutton">Next</button>-->
                 </div>
             </div>
         </div>
@@ -161,10 +65,10 @@
                 <div class="card">
                     <div class="isian">
                         <h3 class="footer-h3">Menu</h3>
-                        <p><a href="#landingpage">Beranda</a></p>
-                        <p><a href="#landingpage">Tentang</a></p>
-                        <p><a href="#landingpage">Cara kerja</a></p>
-                        <p><a href="#landingpage">Login</a></p>
+                        <p><a href="{{'/'}}">Beranda</a></p>
+                        <p><a href="{{route('lp.index')}}#tentang">Tentang</a></p>
+                        <p><a href="{{route('lp.index')}}#carakerja">Cara kerja</a></p>
+                        <p><a href="{{route('home.login')}}">Login</a></p>
                     </div>
                 </div>
                 <div class="card">
@@ -178,4 +82,17 @@
             </div>
         </div>
     </body>
+
+    <script>
+        $(document).ready( function () {
+            $('#showtable').DataTable({
+                "pagingType": "simple_numbers",
+                "language": {
+                    "search": '<i class="fa fa-search"></i>',
+                    "searchPlaceholder": "cari",
+                },
+                "dom":' <"search"f><"top"l>rt<"bottom"ip><"clear">'
+            });
+        } );
+    </script>
 </html>
