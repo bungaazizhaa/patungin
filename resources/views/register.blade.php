@@ -36,6 +36,8 @@
                     <div class="regisgrid">
                         <h2>Register</h2>
                         <div class="regis-input" style="margin-top: 30px;">
+                            <p>Nama</p>
+                            <input type="text" id="nama" name="nama" required>
                             <p>Email</p>
                             <input type="text" id="email" name="email" required>
                             <p>Password</p>
@@ -45,8 +47,6 @@
                                             margin-top: 10px;
                                             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);"
                             >
-                            <p>Nama</p>
-                            <input type="text" id="nama" name="nama" required>
                             {{--<p>Jabatan</p>
                             <input type="text" id="jabatan" name="jabatan" required>
                             <select name="jabatan" id="jabatan" clas="form-control" style="border-radius: 12px;border: none;margin-top: 10px;box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);" required>

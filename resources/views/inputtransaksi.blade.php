@@ -30,7 +30,7 @@
         <div class="produkform-container">
             <div class="transaksiform">
                 <div class="transaksigrid">
-                    <h2>Input Transaksi</h2>
+                    <h2 style="margin-bottom: 20px;">Input Transaksi</h2>
                     <form role="form" action="{{route('proses.storeTrans')}}" method="POST">
                         {{ csrf_field() }}
                     <div class="transaksi-input">
